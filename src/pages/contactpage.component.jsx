@@ -59,6 +59,10 @@ const SocialsBox = styled.div`
   justify-content: space-evenly;
   width: 100%;
   padding: 25px;
+
+  @media screen and (max-width: 800px) {
+    padding: 10px;
+  }
 `;
 
 const FbIcon = styled(FacebookSquare)`
@@ -69,6 +73,10 @@ const FbIcon = styled(FacebookSquare)`
   :hover {
     color: #E1E1E0;
     cursor: pointer;
+  }
+
+  @media screen and (max-width: 800px) {
+    width: 65%;
   }
 `;
 
@@ -81,6 +89,10 @@ const IgIcon = styled(Instagram)`
     color: #E1E1E0;
     cursor: pointer;
   }
+
+  @media screen and (max-width: 800px) {
+    width: 65%;
+  }
 `;
 
 const TwIcon = styled(Twitter)`
@@ -91,6 +103,10 @@ const TwIcon = styled(Twitter)`
   :hover {
     color: #E1E1E0;
     cursor: pointer;
+  }
+
+  @media screen and (max-width: 800px) {
+    width: 65%;
   }
 `;
 

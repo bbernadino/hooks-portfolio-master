@@ -2,12 +2,15 @@ import React, { useState } from 'react';
 
 import styled from 'styled-components';
 import crwn from '../assets/crwn.jpg';
+import amazon from '../assets/amazon.png'
+import discord from '../assets/discord.png'
+import memories from '../assets/memories.png'
 import burgerbuilder from '../assets/burgerbuilder.jpg';
 import forkify from '../assets/forkify.jpg';
+import cisco from '../assets/cisco.png';
 import mtntravel from '../assets/mtntravel.jpg';
 import riverside from '../assets/riverside.jpg';
 import uhost from '../assets/uhost.jpg';
-import todo from '../assets/todo.jpg';
 import gravesite from '../assets/gravesite.jpg';
 
 import { Button } from '../pages/homepage.component';
@@ -147,6 +150,12 @@ const WorksPage = () => {
 
   const [webItems, setWebItems] = useState([
     {
+      title: 'Cisco Heating',
+      imageUrl: cisco,
+      description: 'Website for local HVAC Contractor built with React',
+      linkUrl: 'https://ciscoheatingut.netlify.app/'
+    },
+    {
       title: 'Mtn Travel',
       imageUrl: mtntravel,
       description: 'Web design project built with pure HTML and CSS',
@@ -180,6 +189,24 @@ const WorksPage = () => {
       linkUrl: 'http://crwn-bbern-live.herokuapp.com/'
     },
     {
+      title: 'Amazon Clone',
+      imageUrl: amazon,
+      description: 'Amazon UI, e-commerce clone built with React and Firebase',
+      linkUrl: 'https://clone-feb1e.firebaseapp.com/'
+    },
+    {
+      title: 'Memories App',
+      imageUrl: memories,
+      description: 'MERN fullstack social media application with Mongo Cloud Atlas',
+      linkUrl: 'https://memories-mernproject.netlify.app/'
+    },
+    {
+      title: 'Discord Clone',
+      imageUrl: discord,
+      description: 'Firebase Google Auth, chatroom functionality',
+      linkUrl: 'https://discord-clone-d1c4d.firebaseapp.com/'
+    },
+    {
       title: 'Forkify App',
       imageUrl: forkify,
       description: 'Recipe database search app built with pure es6 JS',
@@ -190,12 +217,6 @@ const WorksPage = () => {
       imageUrl: burgerbuilder,
       description: 'Custom burger ordering app built with React',
       linkUrl: 'https://github.com/bbernadino/burger-builder-reupload'
-    },
-    {
-      title: 'ToDo app',
-      imageUrl: todo,
-      description: 'To-Do app using React Hooks and Styled-Components',
-      linkUrl: 'https://loving-feynman-6516c6.netlify.app/'
     }
   ]);
 
