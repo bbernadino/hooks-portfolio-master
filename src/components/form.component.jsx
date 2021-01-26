@@ -39,12 +39,12 @@ const ContactButtonBox = styled.div`
 
 const Form = ({ setMessageSent }) => {
 
-  // const [name, setName] = useState('');
+  const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [message, setMessage] = useState('');
 
   const clearFields = () => {
-    // setName('');
+    setName('');
     setEmail('');
     setMessage('');
   };
@@ -72,14 +72,14 @@ const Form = ({ setMessageSent }) => {
       action='https://formspree.io/xgelybob'
       method='POST'
     >
-      {/* <label>Your Name:</label>
+      <label>Your Name:</label>
       <ContactField
         name='name'
         type='text'
         placeholder='Name'
         value={name}
         onChange={e => setName(e.target.value)}
-      /> */}
+      />
       <label>Your Email:</label>
       <ContactField
         name='email'
